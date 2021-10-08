@@ -9,9 +9,9 @@ body {
   line-height: 24px;
 }
 *:focus {
-  outline: none;
+  outline: 2px dotted #de2e54;
+  outline-offset: 2px;
 }
-
 .container {
   width: 100%;
   max-width: 1200px;
