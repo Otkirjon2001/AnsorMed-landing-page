@@ -57,11 +57,8 @@ header .logo-link {
   list-style: none;
   display: flex;
 }
-.items li {
+.items li:not(:nth-child(5)) {
   margin-right: 32px;
-}
-.item-5 {
-  margin-right: 0;
 }
 .items a {
   font-size: 14px;
