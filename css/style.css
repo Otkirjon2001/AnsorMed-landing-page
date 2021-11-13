@@ -265,6 +265,13 @@ footer .container {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+footer .site-logo{
+  display: flex;
+  align-items: center;
+}
+footer .logo-icon{
+  margin-right: 16px;
+}
 footer .logo-link {
   color: var(--brand-text-color);
   transition: color 0.4s ease;
