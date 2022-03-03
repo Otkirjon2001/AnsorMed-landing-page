@@ -1,3 +1,12 @@
+/* CUSTOM PROPERTY */
+:root{
+  --brand-color: rgb(222,46,84);
+  --bg-color: #0EB4C1;
+  --brand-text-color: #ffffff;
+  --text-font:"Open Sans", sans-serif;
+  --heading-font: "Open Sans Condensed", sans-serif;
+}
+/* FONTS */
 @font-face {
   font-family: 'Open Sans Condensed';
   font-style: normal;
@@ -31,13 +40,6 @@
   font-display: swap;
 }
 /* GLOBAL STYLES */
-:root{
-  --brand-color: rgb(222,46,84);
-  --bg-color: #0EB4C1;
-  --brand-text-color: #ffffff;
-  --text-font:"Open Sans", sans-serif;
-  --heading-font: "Open Sans Condensed", sans-serif;
-}
 * {
   box-sizing: border-box;
 }
@@ -61,6 +63,15 @@ body {
 a {
   text-decoration: none;
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 h2 {
   font-family: var(--heading-font);
   font-size: 36px;
@@ -82,7 +93,6 @@ header .container {
   display: flex;
   align-items: center;
 }
-
 .logo-link span{
   font-size: 24px;
   font-weight: 600;
@@ -90,22 +100,16 @@ header .container {
   margin-left: 16px;
   color: #222222;
   transition: color 0.4s ease, opacity 0.4s ease;
-
-
 }
 .logo-link:hover span{
   color:var(--brand-color);
-
 }
-
 .logo-link:active span{
   opacity: 0.6;
-
 }
 .logo-link:active{
   opacity: 1;
 }
-
 .items {
   list-style: none;
   display: flex;
