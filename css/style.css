@@ -43,11 +43,27 @@
 * {
   box-sizing: border-box;
 }
-body {
+html{
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
   font-family: var(--text-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  background-color: #fff;
+  color: #000;
 }
 *:focus {
   outline: 2px dotted var(--brand-color);
@@ -92,6 +108,7 @@ h2 {
   border: 2px solid var(--brand-color);
   border-radius: 8px;
   transition: color 0.4s ease, background-color 0.4s ease, border 0.4s ease;
+  white-space: nowrap;
 }
 .button:hover {
   color: var(--brand-color);
@@ -101,6 +118,9 @@ h2 {
 .button:active {
   color: var(--brand-color);
   opacity: 0.6;
+}
+.main-content{
+  flex-grow: 1;
 }
 
 /* SITE HEADER */
