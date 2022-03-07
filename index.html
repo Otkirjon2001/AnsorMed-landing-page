@@ -16,7 +16,7 @@
   <header class="site-header">
     <div class="container header-container">
       <a class="logo-link" href="#">
-        <img src="./img/logo-icon.svg" alt="logo-icon" width="50" height="50">
+        <img class="logo-img" src="./img/logo-icon.svg" alt="logo-icon" width="50" height="50">
         <span class="logo-text">AnsorMed</span>
       </a>
       <ul class="sitenav-items header-sitenav-items">
@@ -40,7 +40,7 @@
     </div>
   </header>
   <!-- MAIN-CONTENT -->
-  <main>
+  <main class="main-content">
     <h1 class="visually-hidden">AnsorMed</h1>
     <!-- HERO -->
     <section class="hero">
@@ -108,34 +108,42 @@
     </section>
     <!-- CONTACT -->
     <section id="contact" class="contacts">
-      <div class="container">
-        <div class="contacts-text">
-          <h2>Qabulga ro’yxatdan o’ting</h2>
-          <a class="contacts-btn-1" href="#">Qo’ng’iroq qilish</a>
-          <a class="contacts-btn-2" href="#">Telegramdan yozish</a>
+      <div class="container contacts-container">
+        <div class="contacts-content">
+          <h2 class="contacts-heading">Qabulga ro’yxatdan o’ting</h2>
+          <div class="contacts-box">
+            <a class="button contacts-button" href="#">Qo’ng’iroq qilish</a>
+            <a class="button contacts-button" href="#">Telegramdan yozish</a>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="site-logo">
-        <a class="logo-link" href="#">
-          <img src="./img/logo-icon.svg" alt="logo-icon" width="50" height="50">
-          <span>AnsorMed</span>
+  <footer class="site-footer">
+    <div class="container footer-container">
+        <a class="footer-logo-link logo-link" href="#">
+          <img class="logo-img" src="./img/logo-icon.svg" alt="logo-icon" width="50" height="50">
+          <span class="footer-logo-text logo-text">AnsorMed</span>
         </a>
-      </div>
-      <nav>
-        <ul class="items">
-          <li class="item-1"><a href="#">Xizmatlar</a></li>
-          <li class="item-2"><a href="#">Dorilar</a></li>
-          <li class="item-3"><a href="#">Asal</a></li>
-          <li class="item-4"><a href="#">Kontaktlar</a></li>
-          <li class="item-5"><a href="#">Blog</a></li>
+        <ul class="sitenav-items footer-sitenav-items">
+          <li class="sitenav-item footer-sitenav-item">
+            <a class="footer-sitenav-item-link sitenav-item-link" href="#">Xizmatlar</a>
+          </li>
+          <li class="sitenav-item footer-sitenav-item">
+            <a class="footer-sitenav-item-link sitenav-item-link" href="#">Dorilar</a>
+          </li>
+          <li class="sitenav-item footer-sitenav-item">
+            <a class="footer-sitenav-item-link sitenav-item-link" href="#">Asal</a>
+          </li>
+          <li class="sitenav-item footer-sitenav-item">
+            <a class="footer-sitenav-item-link sitenav-item-link" href="#">Kontaktlar</a>
+          </li>
+          <li class="sitenav-item footer-sitenav-item">
+            <a class="footer-sitenav-item-link sitenav-item-link" href="#">Blog</a>
+          </li>
         </ul>
-      </nav>
+
     </div>
   </footer>
 </body>

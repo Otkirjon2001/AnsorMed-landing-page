@@ -118,6 +118,10 @@ h2 {
   align-items: center;
   transition: opacity 0.4s ease;
 }
+.logo-img{
+  width: 50px;
+  height: 50px;
+}
 .logo-text{
   margin-left: 16px;
   font-size: 24px;
@@ -272,83 +276,64 @@ h2 {
 
 /* CONTACTS */
 .contacts {
-  background-color: var(--bg-color);
-}
-.contacts .container {
-  display: flex;
-  justify-content: center;
   padding-top: 64px;
   padding-bottom: 64px;
+  background-color: var(--bg-color);
 }
-.contacts h2 {
+.contacts-container {
+  display: flex;
+  justify-content: center;
+}
+.contacts-heading {
+  margin-top: 0;
+  margin-bottom: 40px;
   text-align: center;
   color: var(--brand-text-color);
-  margin-bottom: 52px;
-  margin-top: 0;
 }
-.contacts a {
-  font-family: var(--heading-font);
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 2px;
+.contacts-box{
+  display: flex;
+}
+.contacts-button {
   color: var(--brand-text-color);
-  padding: 12px 24px;
+  background-color: transparent;
   border: 2px solid var(--brand-text-color);
-  border-radius: 8px;
-  text-transform: uppercase;
   transition: color 0.4s ease, background-color 0.4s ease, border 0.4s ease,
     opacity 0.4s ease;
 }
-.contacts a:hover {
+.contacts-button:nth-child(1){
+  margin-right: 40px;
+}
+.contacts-button:hover {
   color: var(--brand-text-color);
   background-color: var(--brand-color);
   border: 2px solid var(--brand-color);
 }
-.contacts a:active {
+.contacts-button:active {
   color: var(--brand-text-color);
   background-color: var(--brand-color);
   border: 2px solid var(--brand-color);
   opacity: 0.6;
 }
-.contacts-btn-1 {
-  margin-right: 88px;
-}
+
 
 /* FOOTER */
 footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: #000000;
 }
-footer .container {
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-footer .site-logo{
-  display: flex;
-  align-items: center;
-}
-footer .logo-icon{
-  margin-right: 16px;
-}
-footer .logo-link {
+.footer-logo-link {
   color: var(--brand-text-color);
   transition: color 0.4s ease;
 }
-footer .logo-link span{
+.footer-logo-text{
   color: var(--brand-text-color);
 }
-footer a:hover {
-  color: var(--brand-color);
-}
-footer .items a {
-  color: var(--brand-text-color);
-}
-footer .items a:hover {
-  color: var(--brand-color);
-}
-footer a:active {
-  opacity: 0.6;
+.footer-sitenav-item-link{
+  color: #fff;
 }
