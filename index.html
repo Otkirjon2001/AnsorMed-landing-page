@@ -6,11 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AnsorMed landing page</title>
-  <!-- Fonts -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@400;600;700&display=swap"
-    rel="stylesheet"> -->
   <!-- Styles -->
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -18,24 +13,30 @@
 
 <body>
   <!-- SITE-HEADER -->
-  <header>
-    <div class="container">
-      <div class="site-logo">
-        <a class="logo-link" href="#">
-          <img src="./img/logo-icon.svg" alt="logo-icon" width="50" height="50">
-          <span>AnsorMed</span>
-        </a>
-      </div>
-      <nav>
-        <ul class="items">
-          <li class="item"><a href="#">Xizmatlar</a></li>
-          <li class="item"><a href="#">Dorilar</a></li>
-          <li class="item"><a href="#">Asal</a></li>
-          <li class="item"><a href="#">Kontaktlar</a></li>
-          <li class="item"><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-      <a class="btn-1" href="#contact">Qabulga yozilish</a>
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="logo-link" href="#">
+        <img src="./img/logo-icon.svg" alt="logo-icon" width="50" height="50">
+        <span class="logo-text">AnsorMed</span>
+      </a>
+      <ul class="sitenav-items header-sitenav-items">
+        <li class="sitenav-item header-sitenav-item">
+          <a class="sitenav-item-link" href="#">Xizmatlar</a>
+        </li>
+        <li class="sitenav-item header-sitenav-item">
+          <a class="sitenav-item-link" href="#">Dorilar</a>
+        </li>
+        <li class="sitenav-item header-sitenav-item">
+          <a class="sitenav-item-link" href="#">Asal</a>
+        </li>
+        <li class="sitenav-item header-sitenav-item">
+          <a class="sitenav-item-link" href="#">Kontaktlar</a>
+        </li>
+        <li class="sitenav-item header-sitenav-item">
+          <a class="sitenav-item-link" href="#">Blog</a>
+        </li>
+      </ul>
+      <a class="button header-button" href="#contact">Qabulga yozilish</a>
     </div>
   </header>
   <!-- MAIN-CONTENT -->
@@ -43,64 +44,65 @@
     <h1 class="visually-hidden">AnsorMed</h1>
     <!-- HERO -->
     <section class="hero">
-      <div class="container">
-        <div class="hero-text">
-          <h2>Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h2>
-          <p>Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan kasalliklarni yengishda yordam
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h2 class="hero-heading">Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h2>
+          <p class="hero-content-text">Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan
+            kasalliklarni yengishda yordam
             beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.</p>
-          <a class="btn-1" href="#contact">Qabulga yozilish</a>
+          <a class="button hero-button" href="#contact">Qabulga yozilish</a>
         </div>
-        <div class="hero-img">
-          <img src="img/hero-img.png" width="423" height="504" srcset="img/hero-img.png 1x, img/hero-img@2x.png 2x"
-            alt="hero-img">
-        </div>
+        <img class="hero-img" src="img/hero-img.png" alt="doctor" width="423" height="504"
+          srcset="img/hero-img.png 1x, img/hero-img@2x.png 2x">
       </div>
     </section>
     <!-- SERVICES -->
     <section class="services">
-      <div class="container">
-        <h2>Xizmatlar</h2>
-        <div class="services-box">
-          <img src="img/image-1.png" alt="image-1" width="200" height="200"
-            srcset="img/image-1.png 1x, img/image-1@2x.png 2x">
-          <div class="services-box-text">
-            <h3>Hijoma</h3>
-            <p>Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu
+      <div class="container services-container">
+        <h2 class="services-heading">Xizmatlar</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <img class="services-item-img" src="img/banka.jpg" alt="banka qo'yish" width="200" height="200"
+              srcset="img/banka.jpg 1x, img/banka@2x.jpg 2x">
+            <div class="services-item-right">
+              <h3 class="services-item-heading">Hijoma</h3>
+              <p class="services-item-text">Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu
               alayhi va sallam dedilar: «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19 va 21-kunlardir»
               (bu kunlar hijrij-kamariy hisobdagi oylar kunlaridir).</p>
-          </div>
-        </div>
-        <div class="services-box">
-          <img src="img/image-2.png" alt="image-2" width="200" height="200"
-            srcset="img/image-2.png 1x, img/image-2@2x.png 2x">
-          <div class="services-box-text">
-            <h3>Manual terapiya</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac,
+            </div>
+          </li>
+          <li class="services-item">
+            <img class="services-item-img" src="img/massaj.jpg" alt="massaj muolajasi" width="200" height="200"
+              srcset="img/massaj.jpg 1x, img/massaj@2x.jpg 2x">
+            <div class="services-item-right">
+              <h3 class="services-item-heading">Manual terapiya</h3>
+              <p class="services-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac,
               rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
-          </div>
-        </div>
-        <div class="services-box">
-          <img src="img/image-3.png" alt="image-3" width="200" height="200"
-            srcset="img/image-3.png 1x, img/image-3@2x.png 2x">
-          <div class="services-box-text">
-            <h3>Zuluk bilan davolash</h3>
-            <p>Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni dorivor
-              zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil tibbiyotga oid
-              sanaladi. Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi, qolganlari
-              shifobaxsh ta’sir ko’rsatmaydi.</p>
-          </div>
-        </div>
-        <div class="services-box end">
-          <img src="img/image-4.png" alt="image-4" width="200" height="200"
-            srcset="img/image-4.png 1x, img/image-4@2x.png 2x">
-          <div class="services-box-text">
-            <h3>Tabiiy dori vositalari</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac,
+            </div>
+          </li>
+          <li class="services-item">
+            <img class="services-item-img" src="img/zuluk.jpg" alt="zuluk qo'yish" width="200" height="200"
+              srcset="img/zuluk.jpg 1x, img/zuluk@2x.jpg  2x">
+            <div class="services-item-right">
+              <h3 class="services-item-heading">Zuluk bilan davolash</h3>
+              <p class="services-item-text">Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni
+              dorivor zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil
+              tibbiyotga oid sanaladi. Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi,
+              qolganlari shifobaxsh ta’sir ko’rsatmaydi.</p>
+            </div>
+          </li>
+          <li class="services-item">
+            <img class="services-item-img" src="img/asal.jpg" alt="asal" width="200" height="200"
+              srcset="img/asal.jpg 1x, img/asal@2x.jpg 2x">
+            <div class="services-item-right">
+              <h3 class="services-item-heading">Tabiiy dori vositalari</h3>
+              <p class="services-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac,
               rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
-          </div>
-        </div>
-        <div class="services-btn">
-          <a class="btn-1" href="#contact">Qabulga yozilish</a>
+            </div>
+          </li>
+        </ul>
+        <div class="services-button-box">
+          <a class="button services-button" href="#contact">Qabulga yozilish</a>
         </div>
       </div>
     </section>
