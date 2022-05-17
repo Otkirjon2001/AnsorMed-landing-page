@@ -203,41 +203,41 @@ h2 {
   margin-bottom: 120px;
   background-color: var(--bg-color);
 }
-.hero-container {
+.hero__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
 }
-.hero-heading {
+.hero__heading {
   width: 500px;
   margin-top: 0;
   margin-bottom: 16px;
   color: var(--brand-text-color);
 }
-.hero-content{
+.hero__content{
   max-width: 440px;
   width: 100%;
 }
-.hero-content-text {
+.hero__text {
   margin-top: 0;
   margin-bottom: 36px;
   font-size: 18px;
   line-height: 27px;
   color: var(--brand-text-color);
 }
-.hero-button {
+.hero__button {
   transition: opacity 0.4s ease;
 }
-.hero-button:hover {
+.hero__button:hover {
   opacity: 0.8;
   color: var(--brand-text-color);
   background-color: var(--brand-color);
 }
-.hero-button:active {
+.hero__button:active {
   opacity: 0.6;
 }
-.hero-img {
+.hero__img {
   display: block;
   width: 423px;
   height: 504px;
