@@ -351,23 +351,22 @@ h2 {
 }
 
 /* FOOTER */
-footer {
+.site-footer {
   padding-top: 24px;
   padding-bottom: 24px;
-  background-color: #000000;
+  background-color: #222;
 }
-.footer-container {
+.site-footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer-logo-link {
-  color: var(--brand-text-color);
-  transition: color 0.4s ease;
+.site-footer__logo{
+  margin-right: 30px;
 }
-.footer-logo-text{
-  color: var(--brand-text-color);
+.logo__text--white{
+  color: #fff;
 }
-.footer-sitenav-item-link{
+.sitenav__link--white{
   color: #fff;
 }
